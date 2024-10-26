@@ -136,7 +136,17 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/styles.css */ \"./src/styles/styles.css\");\n/* harmony import */ var animate_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! animate.css */ \"./node_modules/animate.css/animate.css\");\n/* harmony import */ var _assets_test_image_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/test-image.jpg */ \"./src/assets/test-image.jpg\");\n\r\n\r\n\r\nconst img = document.createElement(\"img\");\r\nimg.classList.add(\"test\");\r\nimg.src = _assets_test_image_jpg__WEBPACK_IMPORTED_MODULE_2__;\r\nimg.alt = \"test failed\";\r\ndocument.body.appendChild(img);\r\n\n\n//# sourceURL=webpack://battleship/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/styles.css */ \"./src/styles/styles.css\");\n/* harmony import */ var animate_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! animate.css */ \"./node_modules/animate.css/animate.css\");\n/* harmony import */ var _scripts_ship__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scripts/ship */ \"./src/scripts/ship.js\");\n\r\n\r\n\r\n(0,_scripts_ship__WEBPACK_IMPORTED_MODULE_2__.createImg)();\r\n\n\n//# sourceURL=webpack://battleship/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/scripts/ship.js":
+/*!*****************************!*\
+  !*** ./src/scripts/ship.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   createImg: () => (/* binding */ createImg)\n/* harmony export */ });\n/* harmony import */ var _assets_test_image_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/test-image.jpg */ \"./src/assets/test-image.jpg\");\n\r\nfunction createImg() {\r\n  const img = document.createElement(\"img\");\r\n  img.classList.add(\"test\");\r\n  img.src = _assets_test_image_jpg__WEBPACK_IMPORTED_MODULE_0__;\r\n  img.alt = \"test failed\";\r\n  document.body.appendChild(img);\r\n}\r\n\r\n\n\n//# sourceURL=webpack://battleship/./src/scripts/ship.js?");
 
 /***/ }),
 
