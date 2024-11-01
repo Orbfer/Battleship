@@ -1,12 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Nabla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Nabla&family=Rubik+Iso&display=swap");
+:root {
+  --mainColor: #227b94;
+  --secondaryColor: #78b7d0;
+  --thirdColor: #16325b;
+  --fourthColor: ;
+  --textColor: #ffdc7f;
+  --mainText: "Nabla", "sans-serif";
+  --secondaryText: "Rubik Iso", "sans-serif";
+}
 * {
   margin: 0;
   padding: 0;
+}
+body {
+  font-family: var(--mainText);
 }
 #page {
   width: 100vw;
   height: 100vh;
   display: grid;
   grid-template-rows: 1fr 6fr;
+  background-color: var(--mainColor);
 }
 #header {
   display: flex;
@@ -17,8 +32,15 @@
   font-size: 2.5em;
 }
 #gameboard {
+  margin: 1em;
 }
-.cont {
+#player-board {
+  width: 100%;
+  height: 50%;
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+}
+#computer-board {
   width: 100%;
   height: 50%;
   display: grid;
@@ -29,6 +51,8 @@
   justify-content: center;
   align-items: center;
   font-size: 1.5em;
+  font-family: var(--secondaryText);
+  color: var(--textColor);
 }
 .board-cont {
   display: flex;
@@ -43,5 +67,11 @@
   height: 280px;
 }
 .square {
-  border: 2px solid black;
+  border: 1px solid var(--secondaryColor);
+}
+#start-screen {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #16325b;
 }
