@@ -41,6 +41,7 @@ body {
   grid-template-rows: 1fr 5fr;
 }
 #computer-board {
+  position: relative;
   width: 100%;
   height: 50%;
   display: grid;
@@ -69,9 +70,26 @@ body {
 .square {
   border: 1px solid var(--secondaryColor);
 }
-#start-screen {
+#ships-pop-up {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: #16325b;
+  background-color: rgba(0, 0, 0, 0.385);
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.pop-up-cont1 {
+  grid-row: 1 /2;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.pop-up-cont2 {
+  grid-row: 2/3;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+}
+.ship-img {
+  width: 100px;
 }
